@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgsn7bx7uv7ja"]
+[gd_scene load_steps=4 format=3 uid="uid://bgsn7bx7uv7ja"]
 
 [ext_resource type="Texture2D" uid="uid://bj43v38wiefpn" path="res://Custom Edited - Pokemon Customs - 281 Kirlia.png" id="1_nh1gv"]
 
@@ -6,18 +6,11 @@
 atlas = ExtResource("1_nh1gv")
 region = Rect2(0, 50, 48, 50)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lr4my"]
-atlas = ExtResource("1_nh1gv")
-region = Rect2(48, 50, 48, 50)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_jfb7g"]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_elul8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lr4my")
 }],
 "loop": true,
 "name": &"default",
@@ -31,4 +24,4 @@ animations = [{
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 position = Vector2(-7, 2)
 sprite_frames = SubResource("SpriteFrames_jfb7g")
-frame_progress = 0.614462
+frame_progress = 0.933552

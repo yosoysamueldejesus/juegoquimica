@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://ecq055iequ8x"]
+
+[ext_resource type="Texture2D" uid="uid://h53inre6hvoq" path="res://assets/playera/MC stand.png" id="1_k0tul"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8os4x"]
+atlas = ExtResource("1_k0tul")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xkauc"]
+atlas = ExtResource("1_k0tul")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51i15"]
+atlas = ExtResource("1_k0tul")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q70da"]
+atlas = ExtResource("1_k0tul")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xglt1"]
+atlas = ExtResource("1_k0tul")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4j0bb"]
+atlas = ExtResource("1_k0tul")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5pbh"]
+atlas = ExtResource("1_k0tul")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aotvc"]
+atlas = ExtResource("1_k0tul")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0h8f0"]
+animations = [{
+"frames": [{
+"duration": 64.0,
+"texture": SubResource("AtlasTexture_8os4x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xkauc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_51i15")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q70da")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xglt1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4j0bb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5pbh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aotvc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0h8f0")
+frame_progress = 0.747885

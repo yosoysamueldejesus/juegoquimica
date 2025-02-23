@@ -213,7 +213,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-<<<<<<< HEAD
+
 "texture": SubResource("AtlasTexture_b2xw5")
 }, {
 "duration": 1.0,
@@ -236,30 +236,7 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6ylc8")
-=======
-"texture": SubResource("AtlasTexture_hwthn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ywokr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5acag")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_02xqs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_slkyu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_uicxw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_naqid")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xol62")
->>>>>>> c4163728608c70cc30a40cda092c60e9332215e8
+
 }],
 "loop": true,
 "name": &"run",

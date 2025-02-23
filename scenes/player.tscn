@@ -63,7 +63,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_aotvc")
 }],
 "loop": true,
-"name": &"quieto ",
+"name": &"quieto",
 "speed": 10.0
 }]
 
@@ -75,8 +75,8 @@ script = ExtResource("1_7qphr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_0h8f0")
-animation = &"quieto "
-autoplay = "quieto "
+animation = &"quieto"
+autoplay = "quieto"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 1)

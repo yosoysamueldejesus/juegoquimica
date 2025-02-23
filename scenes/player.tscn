@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://ecq055iequ8x"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_7qphr"]
+[ext_resource type="Script" path="res://scripst/player.gd" id="1_7qphr"]
 [ext_resource type="Texture2D" uid="uid://h53inre6hvoq" path="res://assets/texturas del personaje/MC stand.png" id="1_k0tul"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8os4x"]

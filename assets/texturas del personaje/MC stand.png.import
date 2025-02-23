@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bj43v38wiefpn"
-path="res://.godot/imported/Custom Edited - Pokemon Customs - 281 Kirlia.png-b2972665a8c0951692775a0ffd80fc18.ctex"
+uid="uid://h53inre6hvoq"
+path="res://.godot/imported/MC stand.png-3024b51defddb389eba9c1fd49b5e870.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Custom Edited - Pokemon Customs - 281 Kirlia.png"
-dest_files=["res://.godot/imported/Custom Edited - Pokemon Customs - 281 Kirlia.png-b2972665a8c0951692775a0ffd80fc18.ctex"]
+source_file="res://assets/texturas del personaje/MC stand.png"
+dest_files=["res://.godot/imported/MC stand.png-3024b51defddb389eba9c1fd49b5e870.ctex"]
 
 [params]
 

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://5e1ud5sg7q43"]
+
+[ext_resource type="Script" path="res://scripst/oxigenont.gd" id="1_vy8p3"]
+
+[node name="Oxigenont" type="Area2D"]
+script = ExtResource("1_vy8p3")
+
+[node name="airent" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="ahogando" type="Timer" parent="."]

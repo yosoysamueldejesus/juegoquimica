@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 @onready var animated_sprite_ = $AnimatedSprite2D
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -350.0
+const SPEED = 250.0
+const JUMP_VELOCITY = -300.0
 
 
 
@@ -30,10 +30,10 @@ func _physics_process(delta: float) -> void:
 	if is_on_floor():
 		if direction == 0:
 			animated_sprite_.play("quieto")
-		#else:
-			#animated_sprite_.play("run")
-	#else:
-		#animated_sprite_.play("jump")
+		else:
+			animated_sprite_.play("run")
+	else:
+		animated_sprite_.play("jump")
 
 
 

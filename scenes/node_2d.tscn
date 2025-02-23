@@ -8,4 +8,5 @@
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(0, -1)
+zoom = Vector2(4, 4)
 limit_smoothed = true

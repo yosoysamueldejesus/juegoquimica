@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://ecq055iequ8x"]
+[gd_scene load_steps=13 format=3 uid="uid://ecq055iequ8x"]
 
+[ext_resource type="Script" path="res://player.gd" id="1_7qphr"]
 [ext_resource type="Texture2D" uid="uid://h53inre6hvoq" path="res://assets/texturas del personaje/MC stand.png" id="1_k0tul"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8os4x"]
@@ -70,10 +71,12 @@ animations = [{
 radius = 8.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_7qphr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_0h8f0")
-frame_progress = 0.926749
+autoplay = "default"
+frame_progress = 0.767103
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 1)

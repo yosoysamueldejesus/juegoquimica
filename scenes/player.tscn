@@ -63,20 +63,20 @@ animations = [{
 "texture": SubResource("AtlasTexture_aotvc")
 }],
 "loop": true,
-"name": &"default",
+"name": &"quieto ",
 "speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7amkj"]
-radius = 8.0
+radius = 6.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_7qphr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_0h8f0")
-autoplay = "default"
-frame_progress = 0.767103
+animation = &"quieto "
+autoplay = "quieto "
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 1)

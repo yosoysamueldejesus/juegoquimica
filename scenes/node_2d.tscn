@@ -1,8 +1,12 @@
-[gd_scene load_steps=7 format=4 uid="uid://bgsn7bx7uv7ja"]
+[gd_scene load_steps=11 format=4 uid="uid://bgsn7bx7uv7ja"]
 
 [ext_resource type="PackedScene" uid="uid://ecq055iequ8x" path="res://scenes/player.tscn" id="1_cccdw"]
 [ext_resource type="Texture2D" uid="uid://nuoqni5vpc3y" path="res://assets/texturas/Textures-16.png" id="2_a3e15"]
 [ext_resource type="Texture2D" uid="uid://dyexwrm0u0qut" path="res://assets/texturas/texturas col.png" id="2_tb7pq"]
+[ext_resource type="PackedScene" uid="uid://cx5ire66c4yg6" path="res://barra.tscn" id="4_1k1af"]
+[ext_resource type="PackedScene" uid="uid://c18wlbst5d7ey" path="res://scenes/mini_boss.tscn" id="5_14fhq"]
+[ext_resource type="PackedScene" uid="uid://blc1s0fobn1c4" path="res://scenes/finalboss.tscn" id="6_pvifc"]
+[ext_resource type="PackedScene" uid="uid://bbhdbo21tdqq6" path="res://assets/enemigos/label.tscn" id="7_4j28p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v6yxf"]
 texture = ExtResource("2_a3e15")
@@ -593,6 +597,26 @@ tile_set = SubResource("TileSet_dw1p2")
 position = Vector2(1, 0)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(2, 1)
+position = Vector2(-1, 0)
 zoom = Vector2(5, 5)
 limit_left = -1000000
+
+[node name="ProgressBar" parent="." instance=ExtResource("4_1k1af")]
+offset_left = -32.0
+offset_top = -48.0
+offset_right = 89.0
+offset_bottom = -32.0
+
+[node name="enemigos" type="Node" parent="."]
+
+[node name="mini boss" parent="enemigos" instance=ExtResource("5_14fhq")]
+position = Vector2(98, 1)
+
+[node name="finalboss" parent="enemigos" instance=ExtResource("6_pvifc")]
+position = Vector2(161, -16)
+
+[node name="Label" parent="." instance=ExtResource("7_4j28p")]
+offset_left = -113.0
+offset_top = -64.0
+offset_right = -21.0
+offset_bottom = -41.0

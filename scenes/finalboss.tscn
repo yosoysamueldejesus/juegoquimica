@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://blc1s0fobn1c4"]
+
+[ext_resource type="Texture2D" uid="uid://db75pju1eijud" path="res://assets/enemigos/final boss.png" id="1_en82i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qta0s"]
+atlas = ExtResource("1_en82i")
+region = Rect2(9, 50, 42, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3g8u4"]
+atlas = ExtResource("1_en82i")
+region = Rect2(51, 50, 42, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d111w"]
+atlas = ExtResource("1_en82i")
+region = Rect2(93, 50, 42, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4o5w"]
+atlas = ExtResource("1_en82i")
+region = Rect2(135, 50, 42, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gfuou"]
+atlas = ExtResource("1_en82i")
+region = Rect2(177, 50, 42, 63)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pigbm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qta0s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3g8u4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d111w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4o5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gfuou")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="finalboss" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pigbm")
+autoplay = "default"
+frame_progress = 0.602985

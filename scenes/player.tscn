@@ -195,11 +195,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-<<<<<<< HEAD
 "speed": 6.0
-=======
-"speed": 10.0
->>>>>>> a71f185f72d155e55c829ca85fbe2694dbf462d6
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6emav"]
@@ -213,11 +209,7 @@ position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_0h8f0")
 animation = &"run"
 autoplay = "quieto"
-<<<<<<< HEAD
-frame_progress = 0.313799
-=======
 frame_progress = 0.597892
->>>>>>> a71f185f72d155e55c829ca85fbe2694dbf462d6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 0)

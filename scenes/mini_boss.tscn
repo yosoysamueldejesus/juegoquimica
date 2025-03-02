@@ -1,0 +1,66 @@
+[gd_scene load_steps=10 format=3 uid="uid://c18wlbst5d7ey"]
+
+[ext_resource type="Texture2D" uid="uid://dm840ew4nxc1o" path="res://assets/enemigos/mini boss fire.png" id="1_huosw"]
+[ext_resource type="Script" path="res://scripst/mini_boss.gd" id="1_ivtp0"]
+[ext_resource type="Script" path="res://animated_sprite_2d.gd" id="2_1x6a5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxbhd"]
+atlas = ExtResource("1_huosw")
+region = Rect2(9, 51, 45, 51)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qpt0s"]
+atlas = ExtResource("1_huosw")
+region = Rect2(54, 51, 45, 51)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vtl61"]
+atlas = ExtResource("1_huosw")
+region = Rect2(99, 51, 45, 51)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4xin"]
+atlas = ExtResource("1_huosw")
+region = Rect2(144, 51, 45, 51)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wehuk"]
+atlas = ExtResource("1_huosw")
+region = Rect2(189, 51, 45, 51)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4ds4n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxbhd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qpt0s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtl61")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4xin")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wehuk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="mini boss" type="Node2D"]
+script = ExtResource("1_ivtp0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.75, 0)
+scale = Vector2(0.966667, 1)
+sprite_frames = SubResource("SpriteFrames_4ds4n")
+autoplay = "default"
+frame = 4
+frame_progress = 0.556632
+script = ExtResource("2_1x6a5")
+
+[node name="RayCast2left" type="RayCast2D" parent="."]
+target_position = Vector2(-23, 0)
+
+[node name="RayCastright" type="RayCast2D" parent="."]
+target_position = Vector2(19, 0)

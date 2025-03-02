@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx5ire66c4yg6"]
+
+[ext_resource type="Script" path="res://barra.gd" id="1_1056g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6qtql"]
+bg_color = Color(1, 0.952941, 0.964706, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0k4uv"]
+bg_color = Color(0.982123, 0, 0.352357, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="ProgressBar" type="ProgressBar"]
+offset_left = 65.0
+offset_right = 250.0
+offset_bottom = 27.0
+theme_override_colors/font_outline_color = Color(0.992157, 0, 0, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_6qtql")
+theme_override_styles/fill = SubResource("StyleBoxFlat_0k4uv")
+value = 100.0
+show_percentage = false
+script = ExtResource("1_1056g")

@@ -195,7 +195,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 10.0
+"speed": 6.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6emav"]
@@ -207,7 +207,7 @@ script = ExtResource("1_7qphr")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_0h8f0")
-animation = &"jump"
+animation = &"run"
 autoplay = "quieto"
 frame_progress = 0.597892
 

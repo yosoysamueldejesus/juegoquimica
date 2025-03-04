@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2pbpiic2r8u0"
-path="res://.godot/imported/MC attack.png-a97f6f89aaa6b8959409cc02f8b13869.ctex"
+uid="uid://bvnn3eev8iyq3"
+path="res://.godot/imported/Puerta cerrada.png-093b25d1b7b674d5c4fc54dc8a0695fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/texturas del personaje/MC attack.png"
-dest_files=["res://.godot/imported/MC attack.png-a97f6f89aaa6b8959409cc02f8b13869.ctex"]
+source_file="res://assets/texturas/Puerta cerrada.png"
+dest_files=["res://.godot/imported/Puerta cerrada.png-093b25d1b7b674d5c4fc54dc8a0695fc.ctex"]
 
 [params]
 

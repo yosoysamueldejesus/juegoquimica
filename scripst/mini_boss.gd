@@ -9,8 +9,8 @@ var direction= 1
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if ray_castright.is_colliding():
-			direction= -1
-	if ray_cast_2_left.is_colliding():
-		direction= 1
+#func _process(delta):
+	#if ray_castright.is_colliding():
+			#direction= -1
+	#if ray_cast_2_left.is_colliding():
+		#direction= 1

@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=4 uid="uid://dantqltgnmxea"]
 
 [ext_resource type="Texture2D" uid="uid://dyexwrm0u0qut" path="res://assets/texturas/texturas col.png" id="1_0yqqw"]
-[ext_resource type="Script" path="res://scenes/tutorial.gd" id="1_s7h1o"]
+[ext_resource type="Script" path="res://scripst/tutorial.gd" id="1_s7h1o"]
 [ext_resource type="PackedScene" uid="uid://ecq055iequ8x" path="res://scenes/player.tscn" id="4_aji1i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7xp60"]

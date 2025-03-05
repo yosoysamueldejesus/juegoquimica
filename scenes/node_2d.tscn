@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://bgsn7bx7uv7ja"]
+[gd_scene load_steps=21 format=4 uid="uid://bgsn7bx7uv7ja"]
 
 [ext_resource type="PackedScene" uid="uid://ecq055iequ8x" path="res://scenes/player.tscn" id="1_cccdw"]
 [ext_resource type="Texture2D" uid="uid://lek6lm42djxl" path="res://assets/texturas/escaleras.png" id="2_5unr0"]
@@ -6,9 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dyexwrm0u0qut" path="res://assets/texturas/texturas col.png" id="2_tb7pq"]
 [ext_resource type="PackedScene" uid="uid://cx5ire66c4yg6" path="res://barra.tscn" id="4_1k1af"]
 [ext_resource type="Texture2D" uid="uid://cjyhyrnfpkhiw" path="res://assets/texturas/marcos_ing.png" id="4_d23ej"]
-[ext_resource type="PackedScene" uid="uid://c18wlbst5d7ey" path="res://scenes/mini_boss.tscn" id="5_14fhq"]
 [ext_resource type="Texture2D" uid="uid://xu8k8jd6xw3r" path="res://assets/texturas/obras_dt.png" id="5_l0hlm"]
-[ext_resource type="PackedScene" uid="uid://blc1s0fobn1c4" path="res://scenes/finalboss.tscn" id="6_pvifc"]
 [ext_resource type="PackedScene" uid="uid://bbhdbo21tdqq6" path="res://assets/enemigos/label.tscn" id="7_4j28p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7la7d"]
@@ -1467,12 +1465,6 @@ offset_right = 89.0
 offset_bottom = -32.0
 
 [node name="enemigos" type="Node" parent="."]
-
-[node name="mini boss" parent="enemigos" instance=ExtResource("5_14fhq")]
-position = Vector2(1798, -177)
-
-[node name="finalboss" parent="enemigos" instance=ExtResource("6_pvifc")]
-position = Vector2(161, -16)
 
 [node name="Label" parent="." instance=ExtResource("7_4j28p")]
 visible = false

@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://sotefhfuwmrh"]
+
+[ext_resource type="Texture2D" uid="uid://mlh47sw2vqfg" path="res://assets/enemigos/student MB.png" id="1_8q0kc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kpeo6"]
+atlas = ExtResource("1_8q0kc")
+region = Rect2(14, 51, 37, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4sg3"]
+atlas = ExtResource("1_8q0kc")
+region = Rect2(51, 51, 37, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lcgaj"]
+atlas = ExtResource("1_8q0kc")
+region = Rect2(88, 51, 37, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3w34d"]
+atlas = ExtResource("1_8q0kc")
+region = Rect2(125, 51, 37, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4b02r"]
+atlas = ExtResource("1_8q0kc")
+region = Rect2(162, 51, 37, 47)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hqcrh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kpeo6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4sg3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lcgaj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3w34d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4b02r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sps4u"]
+radius = 9.0
+height = 34.0
+
+[node name="zombie" type="CharacterBody2D" groups=["zombie"]]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_hqcrh")
+frame = 1
+frame_progress = 0.4343
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 5)
+shape = SubResource("CapsuleShape2D_sps4u")

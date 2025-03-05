@@ -67,4 +67,5 @@ func _physics_process(delta: float) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if (body.name == "CharacterBody2DEnemigo"):
 		body.queue_free() #solo si colisiona con el nodo del enemigo
-		
+		if body.is_in_group("zombie"):
+			body.queue_free() #solo si colisiona con el nodo del enemigo

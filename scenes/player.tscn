@@ -170,11 +170,6 @@ animations = [{
 "name": &"atacando",
 "speed": 15.0
 }, {
-"frames": [],
-"loop": true,
-"name": &"ataqueboss",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yl4v2")
@@ -280,7 +275,7 @@ script = ExtResource("1_7qphr")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(3, -1)
 sprite_frames = SubResource("SpriteFrames_0h8f0")
-animation = &"ataqueboss"
+animation = &"quieto"
 autoplay = "quieto"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
